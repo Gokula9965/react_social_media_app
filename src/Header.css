@@ -1,0 +1,92 @@
+/* Header.css */
+
+.navbar {
+  position: fixed; /* Changed from sticky to fixed */
+  top: 0; /* Ensures it sticks to the top of the viewport */
+  right: 0px;
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+/* Rest of your CSS remains the same */
+
+
+.navbar h3 {
+  margin: 0;
+  font-size: xx-large;
+}
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  font-size: 30px; /* Increase font size */
+}
+
+.navbar ul li {
+  margin-right: 20px;
+  position: relative;
+}
+
+.links {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.links:hover,
+.links:focus {
+  color: #ffa500; /* Change to your desired hover/focus color */
+}
+
+/* Apply background color on hover/focus */
+.navbar ul li:hover,
+.navbar ul li:focus {
+  background-color: white; /* Change to your desired background color */
+}
+
+.navbar ul li:hover .links,
+.navbar ul li:focus .links {
+  color: black; /* Change to your desired text color */
+}
+
+.searchForm input {
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  width: 230px;
+}
+.searchForm input[type='text']::placeholder{
+  text-align: center;
+  font-size: medium;
+}
+
+/* Responsive CSS */
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .navbar ul {
+    margin-left: 0;
+    margin-top: 10px;
+    font-size: 16px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar ul li {
+    margin: 5px 0;
+  }
+
+  .searchForm {
+    margin-top: 10px;
+  }
+}

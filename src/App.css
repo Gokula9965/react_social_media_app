@@ -1,0 +1,170 @@
+/* General styles */
+
+body{
+min-height: 800px;
+}
+.App{
+  margin: auto;
+  max-width:1000px;
+
+}
+
+/* Home page styles */
+.Home{
+  margin-top: 90px;
+  padding-top: 1px;
+  text-align: justify;
+}
+
+/* Name styles */
+.Name{
+  font-size: larger;
+}
+
+/* Date styles */
+.date{
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  color: #333; /* Dark grey color */
+  background-color: #f0f0f0; /* Light grey background color */
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+}
+.newPost {
+  margin-top: 100px;
+  margin-left: 10px;
+  width: 100%;
+}
+
+.newPost label {
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.newPost input[type="text"]{
+  width: 90%; /* Make inputs and textarea full width */
+  padding: 10px; /* Keep padding consistent */
+  margin: 8px 0; /* Keep margin consistent */
+  box-sizing: border-box;
+}
+.newPost .body{
+  width: 90%;
+}
+.newPost button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.delete{
+  background-color:red; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.edit{
+  background-color:grey; /* Green */
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+/* Footer styles */
+.foo {
+  position: fixed;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: black; /* Light grey background color */
+  color: wheat;
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 40px;
+  box-sizing: border-box; /* Ensure padding and border are included in the width */
+  height: 50px;/* Set maximum width to match .App container */
+  margin: 0 auto; /* Center the footer horizontally */
+}
+.newPage{
+  margin-top: 200px;
+}
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .Home{
+    margin-left: 20px; 
+    margin-top: 200px;/* Adjust margin for smaller screens */
+  }
+  .newPage{
+    margin-top: 250px; 
+  }
+  .newPost{
+  margin-top: 240px;
+  }
+  .newPost input[type="text"] {
+    padding: 8px; /* Adjust padding for smaller screens */
+  }
+  .newPost textarea {
+    padding: 8px; /* Adjust padding for smaller screens */
+    width: 96%; /* Make textarea full width */
+    resize: vertical; /* Allow vertical resizing only */
+  }
+  .newPost button {
+    padding: 10px 20px; /* Adjust padding for smaller screens */
+  }
+  .delete{
+    padding: 10px 20px;
+  }
+  .edit{
+    padding: 10px 20px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .Home{
+    margin: 10px;
+    margin-top: 200px; /* Further adjust margin for even smaller screens */
+  }
+  .newPage{
+    margin-top: 225px;
+  }
+  .newPost{
+    margin-top: 220px;
+  }
+  .newPost input[type="text"],
+  .newPost textarea {
+    width: 90%;
+    padding: 10px; /* Further adjust padding for even smaller screens */
+  }
+  .newPost button {
+    padding: 8px 16px; /* Further adjust padding for even smaller screens */
+  }
+  .delete{
+    padding: 10px 20px;
+  }
+  .edit{
+    padding: 10px 20px;
+  }
+}

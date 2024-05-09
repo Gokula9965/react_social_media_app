@@ -1,0 +1,28 @@
+{
+  "posts": [
+    {
+      "id": "1",
+      "name": "My First Post",
+      "dateTime": "July 01, 2021 11:17:36 AM",
+      "body": "Make a video about Tesla q1 results"
+    },
+    {
+      "id": "4",
+      "name": "My Fourth posts",
+      "dateTime": "May 09, 2024 11:31:17 AM",
+      "body": "want to become a respected person by everyone"
+    },
+    {
+      "id": "5",
+      "name": "React Js developer",
+      "dateTime": "May 09, 2024 11:29:18 AM",
+      "body": "Want to become a millionaire"
+    },
+    {
+      "id": "6",
+      "name": "My sixth post",
+      "dateTime": "May 09, 2024 11:30:40 AM",
+      "body": "solved 80 problems in leetcode\n"
+    }
+  ]
+}
